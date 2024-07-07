@@ -1,6 +1,6 @@
 
 
-let strMessage ="";
+//Storing pernonaitly adjectives in an array
 
 const arrOfPeopleAdjectives = ["Accomplished", "Adaptable", "Adept", "Adventurous", "Affable", "Affectionate", 
 "Agreeable", "Alluring", "Amazing", "Ambitious", "Amiable", "Amicable", "Ample", "Amusing", "Approachable", 
@@ -24,6 +24,7 @@ const arrOfPeopleAdjectives = ["Accomplished", "Adaptable", "Adept", "Adventurou
 "Twinkling", "Unassuming", "Understanding", "Unique", "Upbeat", "Versatile", "Vibrant", "Vivacious", "Vivid", 
 "Warm-hearted", "Willing", "Witty", "Wondrous"];
 
+////Storing Places adjectives in another array
 const arrOfPplacesAdjectives = ["Beautiful", 
 "Blazing", "Boundless", "Bountiful", "Breath-taking", "Bright", "Bustling", "Calm", "Colossal", "Colorful", 
 "Cosmopolitan", "Dramatic", "Dusky", "Fairy-tale-like", "Far-flung", "Fascinating", "Favorable", "Fertile", 
@@ -34,17 +35,20 @@ const arrOfPplacesAdjectives = ["Beautiful",
 "Sun-drenched", "Superb", "Terrific", "Towering", "Tranquil", "Unspoiled/Unspoilt", "Vast", "Vibrant"];
 
 
+//a function to create and return a message
 const messageGenerator = () => {
     
- // Choosing a random string out of the array   
+ // Choosing a random string out of the people adjectives array   
  const randomPeopleIndex = Math.floor(Math.random() * arrOfPeopleAdjectives.length);
  const randomPeopleElement = arrOfPeopleAdjectives[randomPeopleIndex];
-
+//// Choosing a random string out of the Places adjectives array
  const randomPlaceIndex = Math.floor(Math.random() * arrOfPplacesAdjectives.length);
  const randomPlaceElement = arrOfPplacesAdjectives[randomPlaceIndex];
-
- strMessage = "Can you image yourself being " + randomPeopleElement + " in a " + randomPlaceElement + " environment or place ?";
+//creating a message with the two randomised strings from both arrays and storing in a string variable
+ let strMessage = "Can you image yourself being " + randomPeopleElement + " in a " + randomPlaceElement + " environment or place ?";
+//returning the message
  return strMessage;
 }
 
+//printing out the message
 console.log(messageGenerator());
