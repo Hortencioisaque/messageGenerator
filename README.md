@@ -3,7 +3,7 @@ A message generator program that outputs a new, random message every time a user
 
 
 ### About The Project
-    *This is a project inspired by Codecademy
+    * This is a project inspired by Codecademy
     The program that outputs a new, random message every time a user runs the program
 
 ### Built With
